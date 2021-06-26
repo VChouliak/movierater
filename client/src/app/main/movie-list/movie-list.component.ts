@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { ApiService } from 'src/app/api.service';
+
 @Component({
   selector: 'app-movie-list',
   templateUrl: './movie-list.component.html',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MovieListComponent implements OnInit {
 
-  constructor() { }
+  movies = [] as any;
+  
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
+    this.apiService.getMovies().subscribe(
+      data => {
+        this.movies = data;
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 
 }

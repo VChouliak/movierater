@@ -7,6 +7,8 @@ import { MovieListComponent } from './movie-list/movie-list.component';
 import { MovieDetailsComponent } from './movie-details/movie-details.component';
 import { MovieFormComponent } from './movie-form/movie-form.component';
 
+import { ApiService } from '../api.service';
+
 const routes: Routes = [
   {path: 'movies', component: MainComponent}
 ];
@@ -21,6 +23,9 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes)
+  ],
+  providers:[
+    ApiService
   ],
   exports: [
     RouterModule
