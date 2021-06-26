@@ -25,8 +25,7 @@ export class MainComponent implements OnInit {
   }
 
   selectMovie(movie: any) {
-    this.selectedMovie = movie;
-    console.log(this.selectedMovie);
+    this.selectedMovie = movie;    
   }
 
 }
