@@ -6,9 +6,9 @@ import { AppComponent } from './app.component';
 
 import { AuthModule } from './auth/auth.module';
 import { MainModule } from './main/main.module';
-import { MovieListComponent } from './movie-list/movie-list.component';
-import { MovieDetailsComponent } from './movie-details/movie-details.component';
-import { MovieFormComponent } from './movie-form/movie-form.component';
+import { MovieListComponent } from './main/movie-list/movie-list.component';
+import { MovieDetailsComponent } from './main/movie-details/movie-details.component';
+import { MovieFormComponent } from './main/movie-form/movie-form.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'movies'}
