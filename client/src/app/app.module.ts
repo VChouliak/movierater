@@ -6,9 +6,7 @@ import { AppComponent } from './app.component';
 
 import { AuthModule } from './auth/auth.module';
 import { MainModule } from './main/main.module';
-import { MovieListComponent } from './main/movie-list/movie-list.component';
-import { MovieDetailsComponent } from './main/movie-details/movie-details.component';
-import { MovieFormComponent } from './main/movie-form/movie-form.component';
+
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'movies'}
@@ -16,10 +14,7 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent,
-    MovieListComponent,
-    MovieDetailsComponent,
-    MovieFormComponent
+    AppComponent  
   ],
   imports: [
     BrowserModule,
