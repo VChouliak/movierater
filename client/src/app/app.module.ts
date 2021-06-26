@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 
 import { AuthModule } from './auth/auth.module';
 import { MainModule } from './main/main.module';
+import { MovieListComponent } from './movie-list/movie-list.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'movies'}
@@ -13,7 +14,8 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,
